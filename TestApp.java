@@ -16,34 +16,34 @@ public class TestApp {
 
 		int[] numbers = {-1, 2, -1, 3, 0};
 
-//		Set<Integer> set = new LinkedHashSet<Integer>();
-//
-//		for (int i : numbers) {
-//
-//			if (set.contains(i)) {
-//				set.remove(i);
-//			}else {
-//				set.add(i);
-//			}
-//		}
-//		
-//		System.out.println(set.toArray()[0]);
-
-		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+		Set<Integer> set = new LinkedHashSet<Integer>();
 
 		for (int i : numbers) {
-			if (map.containsKey(i))
-				map.put(i, map.get(i) + 1);
-			else
-				map.put(i, 1);
-		}
-		
-		for (int i : numbers) {
-			if(map.get(i) == 1) {
-				System.out.println(i);
-				break;
+
+			if (set.contains(i)) {
+				set.remove(i);
+			}else {
+				set.add(i);
 			}
 		}
+		
+		System.out.println(set.toArray()[0]);
+
+//		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+//
+//		for (int i : numbers) {
+//			if (map.containsKey(i))
+//				map.put(i, map.get(i) + 1);
+//			else
+//				map.put(i, 1);
+//		}
+//		
+//		for (int i : numbers) {
+//			if(map.get(i) == 1) {
+//				System.out.println(i);
+//				break;
+//			}
+//		}
 
 	}
 }
